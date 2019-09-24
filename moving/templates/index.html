@@ -1,0 +1,281 @@
+{%extends 'base.html'%}
+{% load bootstrap4 %}
+{%load static %}
+{% block content %}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+<!------ Include the above in your HEAD tag ---------->
+
+<nav class="navbar navbar-expand-lg mb-4 top-bar navbar-static-top sps sps--abv">
+        <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mx-auto" href="#">Aberdare Movers</span></a>
+      <div class="collapse navbar-collapse" id="navbarCollapse1">
+        <ul class="navbar-nav ml-auto">
+         <li class="nav-item active"> <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#process">Our Process</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#about">About</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#services">Services</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#gallery">Image Gallery</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
+        </ul>
+      </div>
+            </div>
+    </nav>
+
+    <div class="swiper-container main-slider" id="myCarousel">
+
+        <div class="swiper-wrapper" style="background: rgb(4, 4, 41)" >
+          <div class="swiper-slide slider-bg-position" style="  background-attachment: fixed; background-position: center; opacity: 0.6; background:url('http://www.sn-desigz.com/wp-content/uploads/2016/08/house-moving-boxes.jpg')" data-hash="slide1">
+            <h1 style='  color: rgb(7, 5, 34) ;
+            font-size: 90px;  letter-spacing: 4px; font-weight: 20px' class="head">Aberdare Movers</h1>
+          </div>
+          <h2 class="mb-0"><a href="#contact" id='blue'  class="btn btn-transparent-white btn-capsul" >Reach us For a Quotation</a></h2>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+      
+      </div>
+<section class="service-sec" id="process">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading">
+      <h2><small>Our Process</small></h2>
+    </div>
+        </div>
+      <div class="col-md-12">
+        <div class="row"> 
+         
+            <div class="col-md-4 text-sm-center service-block"> <i class="fa fa-home" aria-hidden="true"></i>
+          <h3>Get Quotation</h3>
+          <p>You contact us then we reach out to you with a quotation after which we plan for the moving.</p>
+        </div>
+        <div class="col-md-4 text-sm-center service-block"> <i class="fa fa-home" aria-hidden="true"></i>
+          <h3>Packing</h3>
+          <p>On the moving day, we pack your items with utmost care, ensuring nothing is lost or damaged in the process.They are then loaded in our vehicles in readiness for movement to the new location.</p>
+        </div>
+        <div class="col-md-4 text-sm-center service-block"> <i class="fa fa-truck" aria-hidden="true"></i>
+          <h3>Moving</h3>
+          <p>We have the vehicles for whatever scale of moving you need. Your valuables will then be ferried to your new home in one of our trucks.</p>
+        </div>
+       
+      
+     
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-sm-center service-block"> <i class="fa fa-home" aria-hidden="true"></i>
+              <h3>Unpacking</h3>
+              <p>Your valuables will then be unpacked and arranged in your new place. If you need extra services other than unpacking and rearranging, we are ready..</p>
+            </div>
+    
+            <div class="col-md-4 text-sm-center service-block"> <i class="fa fa-home" aria-hidden="true"></i>
+              <h3>Extra Services</h3>
+              <p>We know sometimes clients need extra services which we are willing and ready to deliver.</p>
+            </div>
+          
+        </div>
+      </div>
+      
+    </div>
+    <!-- /.row --> 
+  </div>
+</section>
+
+<!-- About 
+    ================================================== -->
+<section class="about-sec parallax-section" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h2><small>Who We Are</small>About Us<br></h2>
+      </div>
+      <div class="col-md-4">
+        <p>Moving can be so stressful; from the packing process, to loading the items then unpacking and rearranging them in the new home. Most people end up damaging and losing some of their valuable items <br> and you wonder if there is something to ease the process.</p>
+        <p>Guess what! Aberdare Movers is there to fix all that for you. </div>
+      <div class="col-md-4">
+        <p>Our goal is to ensure taht you never have to stress about the moving process because we got you covered.</p>
+        <p>With our able team of movers and drivers together with the resources we have, you can rest easy knowing Aberdare Movers has you sorted..</p>
+        <p><a href="#" class="btn btn-transparent-white btn-capsul">More</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+<br>
+<div id="services" class="container-fluid" style="margin-top: 200px;" >
+  <h2 style='text-align: center; margin-top: 50px; padding-bottom: 50px;'>Our Services</h2>
+  <div class="row" id="services-section">
+    <div class="col-md-4 text-center d-flex ftco-animate">
+      <a href="#" class="services-1">
+        <span class="icon">
+          <i class="flaticon-analysis"></i>
+        </span>
+        <div class="desc">
+          <h3 class="mb-5">Packing</h3>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 text-center d-flex ftco-animate">
+      <a href="#" class="services-1">
+        <span class="icon">
+          <i class="flaticon-flasks"></i>
+        </span>
+        <div class="desc">
+          <h3 class="mb-5">Moving</h3>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 text-center d-flex ftco-animate">
+      <a href="#" class="services-1">
+        <span class="icon">
+          <i class="flaticon-ideas"></i>
+        </span>
+        <div class="desc">
+          <h3 class="mb-5">Unpacking</h3>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4 text-center d-flex ftco-animate">
+      <a href="#" class="services-1">
+        <span class="icon">
+          <i class="flaticon-analysis"></i>
+        </span>
+        <div class="desc">
+          <h3 class="mb-5">Cleaning</h3>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 text-center d-flex ftco-animate">
+      <a href="#" class="services-1">
+        <span class="icon">
+          <i class="flaticon-flasks"></i>
+        </span>
+        <div class="desc">
+          <h3 class="mb-5">TV Mounting</h3>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 text-center d-flex ftco-animate">
+      <a href="#" class="services-1">
+        <span class="icon">
+          <i class="flaticon-ideas"></i>
+        </span>
+        <div class="desc">
+          <h3 class="mb-5">Rearrangement</h3>
+        </div>
+      </a>
+    </div>
+   
+  </div>
+
+
+</div>
+ <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div style='padding-bottom: 100px; padding-top: 100px; 'class="col-md-7 ftco-animate text-center">
+        <h2><span>Available</span> for hiring</h2>
+        
+        <p class="mb-0"><a href="#contact" id='blue'  class="btn btn-transparent-white btn-capsul" >Reach us For a Quotation</a></p>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+
+<footer id='contact'>
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col-md-2"></div>
+       <div style='padding-top:50px;'  class="col-md-3">
+         <strong>Contact Details</strong> <br>
+         <p>Phone Number:</p>
+         
+         <p>0000000</p>
+         <br>
+
+         <p>Email Address:</p>
+         <p>aberdaremovers@gmail.com</p>
+         <br> 
+         <p>Website:</p>
+         <p>www.aberdaremovers.co.ke</p>
+         
+
+
+
+       </div>
+
+       <div class="col-md-1"></div>
+
+    
+
+     
+
+        <div style='padding-top:50px;' class="col-md-6">
+          <p><strong>Fill in this form to get a quotation:</strong></p>
+          <form method="post">
+              {% csrf_token %}
+              {% bootstrap_form form layout='inline' %}
+              <div class="form-group">
+               
+              </div>
+  
+             
+            <div class="form-actions">
+              <button id='send'class='btn btn-transparent-white btn-capsul' type="submit">Send</button>
+            </div>
+        </form>
+          
+
+
+          </div>
+       
+     </div>
+     <div class="row">
+
+     </div>
+   </div>
+
+</footer>
+
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+      
+    <script src="{% static 'home.js' %}"></script>
+
+
+{%endblock%}

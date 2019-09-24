@@ -1,0 +1,48 @@
+{%extends 'base.html'%}
+{% load bootstrap4 %}
+{%load static %}
+{% block content %}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+<!------ Include the above in your HEAD tag ---------->
+<body style='background: rgb(8, 8, 22)' >
+    <nav class="navbar navbar-expand-lg mb-4 top-bar navbar-static-top sps sps--abv">
+        <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mx-auto" href="#">Aberdare Movers</span></a>
+      <div class="collapse navbar-collapse" id="navbarCollapse1">
+        <ul class="navbar-nav ml-auto">
+         <li class="nav-item active"> <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#process">Our Process</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#about">About</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#services">Services</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#gallery">Image Gallery</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
+        </ul>
+      </div>
+            </div>
+    </nav>
+        
+        
+        
+      <h1  style='font-size: 45px;
+      color:white; text-align: center; padding-top: 300px; padding-bottom: 300px;'>
+      Thank you for Contacting us, <br>
+      we will get back to you in a few minutes.
+      </h1>  
+    
+</body>
+
+
+
+      
+    <script src="{% static 'home.js' %}"></script>
+
+
+{%endblock%}
