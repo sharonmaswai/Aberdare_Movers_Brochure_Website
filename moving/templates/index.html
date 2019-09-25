@@ -10,24 +10,27 @@
 <link rel="stylesheet" href="{% static 'css/footer.css' %}">
 <!------ Include the above in your HEAD tag ---------->
 
+
 <nav class="navbar navbar-expand-lg mb-4 top-bar navbar-static-top sps sps--abv">
-        <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand mx-auto" href="#">Aberdare Movers</span></a>
-      <div class="collapse navbar-collapse" id="navbarCollapse1">
-        <ul class="navbar-nav ml-auto">
-         <li class="nav-item active"> <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#process">Our Process</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#about">About</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#services">Services</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#gallery">Image Gallery</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
-        </ul>
-      </div>
-            </div>
-    </nav>
+    <div class="container">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand mx-auto" href="#">Aberdare Movers</span></a>
+  <div class="collapse navbar-collapse" id="navbarCollapse1">
+    <ul class="navbar-nav ml-auto">
+     <li class="nav-item active"> <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#process">Our Process</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#about">About</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="#serve">Services</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="/admin/">admin</a> </li>
+    <li class="nav-item"> <a class="nav-link" href="/gallery/">Image Gallery</a> </li>
+    <li class="nav-item"> <a class="nav-link btn btn-transparent-white btn-capsul" href="#contact">Quotation</a> </li>
+
+    </ul>
+  </div>
+        </div>
+</nav>
 
     <div class="swiper-container main-slider" id="myCarousel">
 
@@ -36,7 +39,7 @@
             <h1 style='  color: rgb(7, 5, 34) ;
             font-size: 90px;  letter-spacing: 4px; font-weight: 20px' class="head">Aberdare Movers</h1>
           </div>
-          <h2 class="mb-0"><a href="#contact" id='blue'  class="btn btn-transparent-white btn-capsul" >Reach us For a Quotation</a></h2>
+  <button>Quotation</button>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -48,11 +51,11 @@
     <div class="row">
         <div class="col-md-12">
             <div class="heading">
-      <h2><small>Our Process</small></h2>
+      <h2 style='text-align: center; margin-top: 50px; padding-bottom: 50px;'>Our Process</h2>
     </div>
         </div>
       <div class="col-md-12">
-        <div class="row"> 
+        <div class="row "> 
          
             <div class="col-md-4 text-sm-center service-block"> <i class="fa fa-home" aria-hidden="true"></i>
           <h3>Get Quotation</h3>
@@ -101,9 +104,9 @@
         <p>Moving can be so stressful; from the packing process, to loading the items then unpacking and rearranging them in the new home. Most people end up damaging and losing some of their valuable items <br> and you wonder if there is something to ease the process.</p>
         <p>Guess what! Aberdare Movers is there to fix all that for you. </div>
       <div class="col-md-4">
-        <p>Our goal is to ensure taht you never have to stress about the moving process because we got you covered.</p>
-        <p>With our able team of movers and drivers together with the resources we have, you can rest easy knowing Aberdare Movers has you sorted..</p>
-        <p><a href="#" class="btn btn-transparent-white btn-capsul">More</a></p>
+        <p>Our goal is to ensure that you never have to stress about the moving process because we got you covered.</p>
+        <p>With our able team of movers and drivers together with the resources we have, you can rest easy knowing Aberdare Movers has you sorted.</p>
+        <p><a href="#contact" class="btn btn-transparent-white btn-capsul">Get Quotation</a></p>
       </div>
     </div>
   </div>
@@ -111,7 +114,7 @@
 <br>
 <br>
 <br>
-<div id="services" class="container-fluid" style="margin-top: 200px;" >
+<div id="serve" class="container-fluid" style="margin-top: 200px;" >
   <h2 style='text-align: center; margin-top: 50px; padding-bottom: 50px;'>Our Services</h2>
   <div class="row" id="services-section">
     <div class="col-md-4 text-center d-flex ftco-animate">
@@ -192,8 +195,66 @@
   </div>
 </div> 
 
+<div  id="reviews">
+
+ 
+
+    <h2 style='text-align: center; margin-top: 50px; padding-bottom: 50px;'>Client Reviews</h2>
+  
+    <!--Grid row-->
+    <div class="container">
+        <div class="row">
+   
+            <div class="col-lg-6 col-md-4 mb-4">
+          
+              
+        
+              <h4 class="my-4 font-weight-bold">Jeff, Donholm</h4>
+              <p style='font-size:20px;' class="grey-text">"Aberdare Movers came and did everything, I did not have to worry about how my things would fit in the truck or whether I would lose anything. I would choose them any day".</p>
+        
+          </div>
+        
+          <!-- <div class="col-lg-4 col-md-3 mb-4">
+        
+            
+        
+              <h4 class="my-4 font-weight-bold">Margaret, Langata</h4>
+              <p class="grey-text">“Their punctuality and professionalism was really impressive.”</p>
+        
+          </div> -->
+          <!--Grid column-->
+         
+        
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-4 mb-4">
+        
+            
+        
+              <h4 class="my-4 font-weight-bold">Sophie, Kikuyu</h4>
+              <p style='font-size:20px;' class="grey-text">"Thanks Aberdare movers for installing my DSTV and mounting my TV, you saved me a lot of stress."</p>
+        
+          </div>
+        
+        
+           </div>
 
 
+    </div>
+   
+  
+        <!--Grid column-->
+       
+        <!--Grid column-->
+  
+   
+    <!--Grid row-->
+  
+    <!--Grid row-->
+   
+    <!--Grid row-->
+  
+
+</div>
 <footer id='contact'>
    <div class="container-fluid">
      <div class="row">

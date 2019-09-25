@@ -16,3 +16,15 @@ class Contact(models.Model):
    
     def __str__(self):
         return self.bio
+class Image(models.Model):
+    image = models.ImageField(upload_to = 'images/')
+    description = models.TextField(max_length=500)
+
+    
+    def save_image(self):
+        self.save()
+    def delete_image(self):
+        self.delete()
+    
+def __str__(self):
+    return self.image_name        

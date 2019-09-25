@@ -7,6 +7,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
 from .models import Contact
 from .forms import ContactForm
+from .models import Image
 
 
 def index(request):
@@ -26,16 +27,16 @@ def index(request):
 	else:
 		form = ContactForm(request.POST)
 		if form.is_valid():
-			phone_number = form.cleaned_data['phone_number']
+			subject = form.cleaned_data['subject']
 			from_email = form.cleaned_data['from_email']
-			name = form.cleaned_data['name']
+			message = form.cleaned_data['message']
 			# phone_number = form.cleaned_data['name']
 			# current_home= form.cleaned_data['name']
 			# new_home = form.cleaned_data['new_home']
 			#bedrooms = form.cleaned_data['bedrooms']
 			# moving_date = form.cleaned_data['moving_date']
 			try:
-				send_mail(phone_number, name, from_email, ['chepsharonmaswai@gmail.com'])
+				send_mail(subject, message, from_email, ['chepsharonmaswai@gmail.com'])
 			except BadHeaderError:
 				return HttpResponse('Invalid header found.')
 			return redirect('alert')
@@ -44,4 +45,8 @@ def index(request):
 def alert(request):
 
     return render(request, 'alert.html')    
- 
+def gallery(request):
+    
+
+    posts=Image.objects.all()
+    return render(request, 'gallery.html',{'posts':posts}) 
